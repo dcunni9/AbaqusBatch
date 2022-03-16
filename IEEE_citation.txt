@@ -1,0 +1,1 @@
+Cunningham, D (2021), AbaqusBatch (Version 01.0)[Control program]. https://github.com/dcunni9/AbaqusBatch
