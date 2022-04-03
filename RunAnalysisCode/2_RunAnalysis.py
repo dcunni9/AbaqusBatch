@@ -25,7 +25,7 @@ def runanalysis(path, workingdirectory):
         os.system('abaqus job=' + tail[:-4] + " input=" + head + '/' + tail[:-4] + '.inp interactive cpus=8')
         os.replace(workingdirectory + "/" + tail[:-4] + '.odb', head + '/' + tail[:-4] + '.odb')
 
-    else:
+    elif (os.path.isfile(head + '/' + tail[:-4] + '.inp')) == False:
         print("No inps you liar!!")
 
 files = os.listdir(inputdirectory)
