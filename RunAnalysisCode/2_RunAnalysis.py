@@ -22,8 +22,8 @@ def runanalysis(path, workingdirectory):
     if (os.path.isfile(head + '/' + tail[:-4] + '.inp')) == True:
         print("test exists")
         print(" input=" + head + '/' + tail[:-4] + '.inp')
-        os.system('abaqus job=' + tail[:-4] + " input=" + head + '/' + tail[:-4] + '.inp interactive cpus=8')
-        os.replace(workingdirectory + "/" + tail[:-4] + '.odb', head + '/' + tail[:-4] + '.odb')
+        os.system('abaqus job=' + tail[:-4] + " input=" + head + '/' + tail[:-4] + '.inp interactive cpus=10')
+        os.replace(workingdirectory + "/" + tail[:-4] + '.odb', exportdirectory + '/' + tail[:-4] + '.odb')
 
     elif (os.path.isfile(head + '/' + tail[:-4] + '.inp')) == False:
         print("No inps you liar!!")
